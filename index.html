@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Làm cho hình ảnh trong carousel hoàn toàn phản hồi */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="https://gongcha.com.vn/wp-content/uploads/2018/03/Untitled-4.png" alt="logo" style="width:40px;">
+    </a>
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">TRANG CHỦ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">GIỚI THIỆU</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">THỰC ĐƠN</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">THÀNH VIÊN</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">TIN TỨC & ƯU ĐÃI</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">CỬA HÀNG</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">TUYỂN DỤNG</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">LIÊN HỆ</a></li>
+    </ul>
+    <div class="ml-auto">
+        <img src="https://gongcha.com.vn/wp-content/plugins/qtranslate-xt-master/flags/vn.png" alt="VN" style="width:40px;">
+        <img src="facebook.png" alt="Facebook" style="width:40px;">
+        <img src="instargram.jfif" alt="Instagram" style="width:40px;">
+        <img src="https://cloud.z.com/vn/news/javascript/" alt="Logo" style="width:40px;">
+    </div>
+</nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="mango799x500.jpg" alt="Mango" width="1100" height="500">
+        </div>
+        <!-- Thêm các carousel-item khác ở đây -->
+    </div>
+
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+<div class="container text-center my-4">
+    <div class="row gx-5">
+        <div class="col">
+            <img src="Banner-Trang-Chủ-kế-địa-chỉ-CH-800x380-01.jpg" class="img-fluid" alt="Banner">
+        </div>
+        <div class="col">
+            <div class="p-3">Hãy chọn thành phố bạn đang sống. Gong Cha sẽ hiển thị danh sách cửa hàng trong khu vực.</div>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Chọn Tỉnh/Thành
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">HCM</a>
+                    <a class="dropdown-item" href="#">HÀ NỘI</a>
+                    <a class="dropdown-item" href="#">VŨNG TÀU</a>
+                    <a class="dropdown-item" href="#">...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center my-4">
+    <div class="row">
+        <div class="col">
+            <img src="banner-6-buoc-395x494.jpg" class="img-fluid" alt="Banner 6 Bước">
+        </div>
+        <div class="col">
+            <img src="mango.395x280.jpg" class="img-fluid" alt="Mango">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xl-4">
+            <h1>Ưu Đãi</h1>
+            <p>Khám phá ngay các chương trình ưu đãi cực hấp dẫn của Gong Cha trong tháng này!</p>
+            <hr>
+            <p>Chào mừng bạn đến với trà sữa Gong Cha, hãy cùng khám phá những khuyến mãi và ưu đãi của chúng tôi trong tháng này nhé.</p>
+        </div>
+
+        <div class="col-xl-4">
+            <div class="card img-fluid" style="width:100%;">
+                <img class="card-img-top" src="https://gongcha.com.vn/wp-content/uploads/2024/09/mango.395x280.jpg" alt="Card image">
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Xem thêm ></button>
+                    <div class="modal" id="myModal1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Gong Cha ra mắt Mango Sago mừng Trung Thu</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    Mô tả sản phẩm...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4">
+            <div class="card img-fluid" style="width:100%;">
+                <img class="card-img-top" src="https://gongcha.com.vn/wp-content/uploads/2024/04/quyt.395x280-1400x993.jpg" alt="Card image">
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Xem thêm ></button>
+                    <div class="modal" id="myModal2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Gong Cha chào Hè bằng Quýt Yuzu</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    Mô tả sản phẩm...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <img class="card-img-top" src="Remove-bg.ai_1726925790482.png" alt="Card image" style="width:100%">
+      <p  style="text-align:center">Tinh túy từ lá trà hảo hạn</p>
+        <button style="text-align:center">Tìm Hiểu Thêm</button>
+<div class="container px-4 text-center">
+  <div class="row gx-5">
+    <div class="col">
+     <img src="https://gongcha.com.vn/wp-content/uploads/2017/12/ly-tra.png">
+    </div>
+    <div class="col">
+      <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Thức uống đặc biệt gong cha</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trà  nguyên chất</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trà sữa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Thức uống đã say </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Thức uống uống sáng tạo</a>
+        </li>
+          <p>Thức Uống Đặc Biệt Gong Cha
+Dòng thức uống đặc biệt kết hợp giữa trà nguyên chất với lớp milk foam béo cùng vị mặn nhẹ đặc trưng mang đến điểm nhấn sáng tạo cho một thức uống quen thuộc.</p>
+           <button type="button">Xem thực đơn</button>
+  </ul>
+</div>
+    </div>
+  </div>
+</div>
+<div class="container px-4 text-center">
+  <div class="row gx-5">
+    <div class="col">
+     <img src="460024238_819855173697143_1812568463270451645_nlow.jpg">
+    </div>
+    <div class="col">
+      <img src="460114069_819577267058267_9141619106475574884_nlow.jpg">
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+</div>
+<div class="row">
+    <nav class="navbar navbar-expand-sm ">
+        <img src="" alt="logo" style="width:40px;">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Giới thiệu/</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Tin Tức&Ưu đãi/</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Thực đơn/</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Cửa hàng/</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Tuyển dụng/</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Liên hệ</a>
+    </li>
+  </ul>
+</nav>
+</div>
+ <p> info@gongcha.com.vn</p>
+</body>
+</html>
